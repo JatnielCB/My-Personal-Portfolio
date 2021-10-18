@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="portfolio, jatniel, homeflix">
+    <meta name="description" conent="Hi, my name is Jatniel and this is my personal portfolio">
+    <meta name="author" content="Jatniel Carranza Bolaños">
+    <meta name="copyright" content="jbprojects">
+    <meta name="robots" content="index">
+    <!--Fabicon and Page title-->
+    <link rel="icon" type="image/png" href="source/icons/icon.png" />
+    <title>jbproyects</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="source/bs/css/bootstrap.css">
+    <script href="source/bs/js/bootstrap.min.js"></script>
+    <!-- My js and CSS -->
+    <link rel="stylesheet" href="source/main.css" type="text/css">
+    <link rel="stylesheet" href="source/modal.css" type="text/css">
+    <script src="source/fun.js"></script>    
+</head>
+<body onload="changeBackgroundInterval()">
+
+<header id="nav-header">
+    <nav id="navbar"> 
+        <div>    
+            <img src="source/icons/logo8.png" onclick="changeColorSetInterval(true)" id="logo">
+        </div>
+        <div id="links-container">
+            <ul>
+                <li><a class="nav_a" href="#welcome-section">About</a></li>
+                <li><a class="nav_a" href="#projects-link">Projects</a></li>
+                <li><a class="nav_a" href="#contact-link">Contact</a></li>
+            </ul>
+           
+        </div>
+    </nav>
+</header>
+
+<main>
+
+<section id="welcome-section" >
+    <div class="title-background" >
+        <div id="title-container">
+            <h1 id="the-title">Hi i am Jatniel</h1>
+            <p class="subtitle" onclick="changeBckButton()">&lt; a junior web developer/&gt;</p>
+            <img>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <header id="about-title">About me</header>
+    <div id="about-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae bibendum risus. Aliquam molestie tempor ante rutrum auctor. Morbi ac urna eget orci dictum vehicula. Sed ut venenatis nunc, sagittis pharetra tellus. In eget fermentum quam, et fringilla velit. Suspendisse blandit commodo sem a elementum. Nunc pellentesque felis eu velit interdum, a vehicula mi ullamcorper. Praesent imperdiet lacus purus, non scelerisque metus auctor vel. Aliquam lectus ipsum, cursus vel porta eget, iaculis id mauris. Nunc egestas dui accumsan nibh vestibulum finibus. Vivamus sit amet sem quis lacus egestas sagittis eu efficitur est. Integer velit nunc, mollis ut sapien eget, laoreet fermentum sapien. Suspendisse laoreet metus ut neque semper accumsan. Fusce a varius purus. Maecenas non suscipit turpis.</p></div>
+    <p class="text-center m-0"><strong>My skills</strong></p>
+    <footer id="skills-container">
+        <div id="frontend-skills-container" class="fullstack-skills-container">
+            <p>Frontend</p>
+            <div id="frontend-skills" class="fullstack-skills" >
+                <img src="source/icons/html.png" alt="HTML" class="skills">
+                <img src="source/icons/css.png" alt="CSS" class="skills">
+                <img src="source/icons/javascript.png" alt="Javascript" class="skills">
+                <img src="source/icons/bootstrap.png" alt="Bootstrap" class="skills">
+            </div>
+        </div>
+
+        <div id="backend-skills-container" class="fullstack-skills-container">
+            <p>Backend</p>
+            <div id="backend-skills" class="fullstack-skills">
+                <img src="source/icons/php.png" alt="php" class="skills">
+                <img src="source/icons/mysql.png" alt="MySQL" class="skills">
+                <img src="source/icons/ubuntuserver.png" alt="Ubuntu Server" class="skills">
+            </div>
+        </div>
+        <div class="fullstack-skills-container">
+            <p>Other</p>
+            <div id="frontend-skills" class="fullstack-skills" >
+                <img src="source/icons/git.png" alt="HTML" class="skills">
+                <img src="source/icons/github.png" alt="CSS" class="skills">
+                <img src="source/icons/terminal.png" alt="Javascript" class="skills">
+                
+            </div>
+        </div>
+
+    </footer>
+
+</section>
+
+<section id="projects">
+
+    <header id="projects-header">These are some of My Projects<a id="projects-link" class="links"></a></header>
+    <div id="projects-container">
+
+        <div class="project-tile">
+            <img id="prueba" src="source/img/Homeflix2.png" alt="homeflix img" class="image">
+            <P class="project-name">Homeflix</P>
+                <a class="btn-gd" href="http://homeflix.sytes.net/inicio/login.php" target="_BLANK">Go to page</a>
+                <a class="btn-gd" href="#" target="_BLANK">See Code</a>
+                <button class="btn-gd" onclick="showproject(Homeflix)">Description</button>
+        </div>
+
+        <div class="project-tile">
+            <img id="prueba"src="source/img/Portfolio1.png" alt="Personal Portfolio image" class="image">
+            <P class="project-name">My Personal Portfolio</P>
+                <button class="btn-gd" disabled>You are here :)</button>
+                <a class="btn-gd" href="https://github.com/JatnielCB/My-Personal-Portfolio" target="_BLANK">See Code</a>
+                <button class="btn-gd" onclick="showproject(Portfolio)">Description</button>
+        </div>
+
+        <div class="project-tile">
+            <img id="prueba"src="source/img/T_D_P1.png" alt="Technical Documentation Page image" class="image">
+            <P class="project-name small-text">Technical Documentation Page</P>
+                <a class="btn-gd" href="http://jbproyects.sytes.net/tdp/index.html" target="_BLANK">Go to page</a>
+                <a class="btn-gd" href="https://github.com/JatnielCB/Technical-Documentation-Page" target="_BLANK">See Code</a>
+                <button class="btn-gd" onclick="showproject(T_D_P)">Description</button>
+        </div>
+
+        <div class="project-tile">
+            <img id="prueba"src="source/img/P_L_P2.png" alt="Product Landing Page image" class="image">
+            <P class="project-name">Product Landing Page</P>
+                <a class="btn-gd" href="http://jbproyects.sytes.net/plp/index.html" target="_BLANK">Go to page</a>
+                <a class="btn-gd" href="https://github.com/JatnielCB/Product-Landing-Page" target="_BLANK">See Code</a>
+                <button class="btn-gd" onclick="showproject(P_L_P)">Description</button>
+        </div>
+
+    </div>
+    <footer id="projects-footer"><button class="btn-swall">Show all <span>=&gt;</span></button></footer>
+</section>
+
+<section class="" id="contact">
+    <header id="contact-title">Let's work together...<a id="contact-link" class="links"></a></header>
+    <div id="contact-links">
+        <a href="#" class="my-links">Linkedin</a>
+        <a href="https://github.com/JatnielCB/" class="my-links" target="_blank">GitHub</a>
+        <a href="#" class="my-links">Twitter</a>
+        <a href="https://wa.me/525534891367" class="my-links" target="_blank">WhatsApp</a>
+        <a href="mailto:jatniel2000@gmail.com" class="my-links">Email</a>
+    </div>  
+</section>
+<footer id="footer">
+    <p>Portafolio version: 1.0, Web-server edition </p>
+    <p>&copy;Created by Jatniel Carranza Bolaños</p>
+</footer>
+<!--Modal--> 
+<div id="modal-background" onclick="hideproject()"></div>
+<div id="modal">
+        <p id="exit-modal" onclick="hideproject()">x</p>
+        <div id="galery"></div>
+        <div id="thedots"> 
+            <div id="dot1" class="dots-style" onclick="dotsSelect(1)"></div>
+            <div id="dot2" class="dots-style" onclick="dotsSelect(2)"></div>
+            <div id="dot3" class="dots-style" onclick="dotsSelect(3)"></div>
+        </div>
+        <p id="modal-project-title"><strong>"Title"</strong></p>
+        <p id="modal-project-description">"Description"</p>
+        <p id="made-with-self"><strong>Made with:</strong></p>
+        <div id="made-with"></div>
+        <button id="visit" class="btn-gd btn-inmodal1">Visit!</button>
+        <button id="code1"class="btn-gd btn-inmodal2">GitHub Code</button>
+        <button id="code2"class="btn-gd btn-inmodal3">Code.pen Code</button>
+</div>
+
+</main>
+</body>
+<script src="source/smoothscroll.js"></script>
+<script src="source/config.js"></script>
+</html>
